@@ -116,6 +116,10 @@ a:visited {
   align-items: center;
   justify-content: space-evenly;
 }
+.page2main a:hover {
+  opacity: 1;
+  border-radius: 10%;
+}
 .tesla {
   display: flex;
   flex-direction: column;
