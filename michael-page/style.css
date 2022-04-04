@@ -238,4 +238,8 @@ a:visited {
     width: 30vw;
     height: 30vh;
   }
+  .myinfo {
+    width: 100vw;
+    font-size: 20px;
+  }
 }
