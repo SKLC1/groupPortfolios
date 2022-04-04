@@ -203,4 +203,21 @@ a:visited {
 }
 .myinfo {
   width: 45vw;
+  font-size: 30px;
+}
+.page3main p {
+  padding: 20px;
+  background-color: hsl(161, 65%, 80%, 0.5);
+  border-radius: 50%;
+  color: #48466d;
+  font-weight: 700;
+}
+@media (max-width: 786px) {
+  .page3main {
+    flex-direction: column;
+  }
+  .page3img {
+    width: 30vw;
+    height: 30vh;
+  }
 }
