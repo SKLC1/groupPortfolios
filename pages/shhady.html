@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c4607dc13.js" crossorigin="anonymous"></script>
+    <title>shhady</title>
+</head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;
+        }
+        .nav{
+            display: flex;
+            background-color: lightgrey;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            opacity: 0.8;
+        }
+        .nav ul{
+            display: flex;
+            list-style: none;
+            
+            
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+
+            .header {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                margin-top: 6rem;
+                align-items: center;
+                gap: 2rem;
+            }
+            .header img{
+                padding: 2rem;
+                border-radius: 50%;
+                width: 30vw;
+                height: 30vw;
+            }
+            .header p{
+                line-height: 1rem;
+                margin-top: 2rem;
+                
+            }
+            @media (max-width:768px) {
+                .header{
+                    grid-template-columns: 1fr;
+                    align-items: center;
+                    text-align: center;
+                }
+                .header p {
+                    text-align: center;
+                }
+                .header img{
+                    height: 300px;
+                    width: 300px;
+                }
+                
+                .buttons{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-around;
+                    
+                }
+            }
+                .btn{
+                padding: 1rem;
+                border-radius: 20px;
+                width: 35%;
+                margin: 0.5rem;
+                font-weight: bold;
+                /* transition: all 0.5s; */
+            }
+            .btn:hover{
+                background-color: black;
+                color: white;
+            }
+            @media (max-width:768px) {
+                .buttons{
+                justify-content: center;
+            }
+        }
+        .sub-main{
+            display: flex;
+            background-color: lightgrey;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            padding: 1rem;
+            background: lightgrey;
+            opacity: 0.6;
+            border-radius: 80px;
+        }
+        .vid{
+            background-color: grey;
+            border: 0.8rem;
+            padding: 0.8rem 3rem;
+            border-radius: 30px; 
+            transition: all 0.5s;
+            
+        }
+        .vid:hover{
+            background-color: black;
+            color:#fff;
+        }
+        .imgs{
+            background-color: grey;
+            border: 0.8rem;
+            padding: 0.8rem 3rem;
+            border-radius: 30px; 
+            transition: all 0.5s;
+            
+        }
+        .imgs:hover{
+            background-color: black;
+            color:#fff;
+        }
+        .pro{
+            background-color: grey;
+            border: 0.8rem;
+            padding: 0.8rem 3rem;
+            border-radius: 30px; 
+            transition: all 0.5s;
+            
+        }
+        .pro:hover{
+            background-color: black;
+            color:#fff;
+        }
+        @media (max-width:529px) {
+        .pro {
+                padding: 0.4rem 0.6rem;    
+         }
+        .imgs {
+                padding: 0.4rem 0.6rem;
+         }
+        
+        .vid{
+                padding: 0.4rem 0.6rem;
+        }
+
+        }
+
+        .main{
+            padding: 1rem;
+            background-color: ghostwhite;
+        }
+        .projects {
+            display: grid;
+             grid-template-columns: repeat(3, 1fr);
+             grid-gap: 15px;
+             text-align: center;
+        }
+        img {
+         width: 100%;
+         height: 80%;
+         object-fit: cover;
+
+        }
+        .tesla{
+            border-radius:30px;
+            border:1px solid black;
+            box-shadow: 1px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+    </style>
+<body>
+   <div class="nav">
+       <div>
+        <h1>My profile</h1>
+       </div>
+       <div>
+            <ul>
+                <li> <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i> 
+              </a></li>
+                <li> <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i> 
+              </a></li>
+                <li> <a href="#" target="_blank">
+                    <i class="fab fa-linkedin-in"></i> 
+              </a></i></li>
+            </ul>
+       </div>
+   </div>
+
+   <div class="header">
+         <div>
+            <img src="https://scontent.fhfa4-1.fna.fbcdn.net/v/t1.6435-9/65621409_10157496048765555_4928813574496714752_n.jpg?stp=c0.376.1080.1080a_dst-jpg_s526x395&_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=IBy95b1CgY4AX9YpNQE&tn=gmGTvCn67yPoH2lC&_nc_ht=scontent.fhfa4-1.fna&oh=00_AT-0QZfBMtSCbQLRgjvRcHLsr1-ELTfQGBZqNwqi8jubCQ&oe=626F723B
+            " alt="profile picture">
+         </div>
+         <div>
+            <h1>Shhady Serhan</h1>
+            <p>
+              <h3>  Nazareth, 33 years old </h3>
+                I'm a fullstack developer, my previous job was an account manager in the financial markets and specialist in the crypto currency market.
+                My hobbies are football, wakeboarding and beach volleyball.
+            </p>
+            <div class="buttons">
+            <button class="btn">Follow</button>
+            <button class="btn">Send Message</button>
+        </div>
+         </div>
+   </div>
+         <div class="sub-main">
+             <div class="pro">
+                 <h2>Projects</h2>
+             </div>
+             <div class="imgs">
+                <h2>
+                    Photos
+                </h2>
+            </div>
+             <div class="vid">
+                 <h2>
+                    Videos
+                 </h2>
+                </div>
+         </div>
+
+         <div class="main">
+            <div class="projects">
+                <div class="tesla">
+                    <a href="https://genuine-capybara-5d33c3.netlify.app/">
+                        <img alt="Tesla" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop">
+                     </a>
+                     <h2>Tesla Model 3</h2>
+                </div>
+            </div>
+
+         </div>
+</body>
+</html>
+
+      
