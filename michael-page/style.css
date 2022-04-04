@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  overflow: hidden;
+}
+.page1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3d84a8;
+  text-align: center;
+}
+.page1 header {
+  width: 100vw;
+  height: 48%;
+  color: #abedd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+.page1 .main {
+  width: 100vw;
+  height: 48%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+.page1 .main div a {
+  text-decoration: none;
+  transition: all 1s ease;
+  padding: 30px;
+  border-radius: 50%;
+}
+.page1 .projects a {
+  color: #abedd8;
+}
+.page1 .projects a:hover {
+  padding: 40px;
+  background-color: rgba(171, 237, 216, 0.5);
+}
+.page1 .aboutme a {
+  color: #abedd8;
+}
+.page1 .aboutme a:hover {
+  padding: 40px;
+  background-color: rgba(171, 237, 216, 0.5);
+}
+a:visited {
+  color: #abedd8;
+}
+.page1 .main a:hover {
+}
+/*  */
+.backpage {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  color: #abedd8;
+  font-size: 20px;
+}
+.backpage a {
+  color: #abedd8;
+  text-decoration: none;
+}
+/*  */
+@media (max-width: 786px) {
+  .page1 header {
+    font-size: 30px;
+  }
+  .page1 .main {
+    flex-direction: column;
+  }
+}
+
+#page2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3d84a8;
+  text-align: center;
+  border: #3d84a8 solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.nav-page2 {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-page2 a {
+  text-decoration: none;
+  font-size: 30px;
+}
+.nav-page2 a:visited {
+  text-decoration: none;
+  color: #48466d;
+}
+.page2main {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tesla {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+}
+.hotel {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+}
+.page2main a {
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+  opacity: 0.6;
+  transition: all 1s ease;
+}
+.teslapic {
+  background: url(prev-tesla.jpg) center center/cover;
+  width: 100%;
+  height: 100%;
+}
+.hotelpic {
+  background: url(prev-hotel.jpg) center center/cover;
+  width: 100%;
+  height: 100%;
+}
+.page2main a:hover {
+  border-radius: 10%;
+  opacity: 1;
+}
+#page3 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3d84a8;
+  text-align: center;
+  border: #3d84a8 solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.nav-page3 {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.page3main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 80vh;
+}
+.page3img {
+  width: 30vw;
+  height: 60vh;
+  border-radius: 20%;
+  border: solid 5px #48466d;
+}
+.myinfo {
+  width: 45vw;
+}
