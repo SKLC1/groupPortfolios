@@ -1,123 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group's Page</title>
     <style>
-      /* reset */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      /* cards */
-      .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 0px 50px;
-        flex-wrap: wrap;
-      }
-      .card {
-        width: 200px;
-        height: 300px;
-        border: solid #333 1px;
-        border-radius: 20px;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-      }
-
-      .image {
-        background-color: aqua;
-        border: solid #333 1px;
-        border-radius: 50%;
-        width: 8rem;
-        height: 8rem;
-      }
-      .button {
-        background-color: rgb(0, 102, 255);
-        border-radius: 20px;
-        padding: 10px 10px;
-        transition: all 0.5s;
-      }
-      .button:hover {
-        opacity: 0.5;
-        background-color: grey;
-      }
-      .button a {
-        text-decoration: none;
-        color: #fff;
-      }
-      /* media */
-      @media (max-width: 700px) {
-        .container {
-          flex-direction: column;
-          margin: 0px 0px;
+        /* reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-      }
-      /* segev card */
-
-      /* ari card */
-
-      /* shady card */
-
-      /* keter card */
-
-      /* michael card */
+        /* nav */
+        .nav-container{
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          border-bottom: rgba(0,0,0,0.5) solid 1px;
+        }
+        .nav-list{
+          display: flex;
+          list-style: none;
+        }
+        .logo{
+          margin-left: 2rem;
+          transition: all 1s;
+          cursor: pointer;
+        }
+        .logo:hover{
+          transform: scale(1.2);
+        }
+        .nav-item{
+          margin: 10px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 1s;
+        }
+        .nav-item:hover{
+          transform: scale(1.2);
+        }
+        /* cards */
+        
+        .container {
+          height: 50vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 50px;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            width: 200px;
+            height: 300px;
+            border: solid #333 1px;
+            border-radius: 20px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            transition: all 1s;
+            cursor: pointer;
+        }
+        .card:hover{
+          transform: scale(1.1);
+          box-shadow: 1px 1px 5px 2px #888888;
+        }
+        h1 {
+          font-size: 1.4rem;
+        }
+        
+        .image {
+            background-color: aqua;
+            border: solid #333 1px;
+            border-radius: 50%;
+            width: 8rem;
+            height: 8rem;
+        }
+        
+        .button {
+            background-color: rgb(0, 102, 255);
+            border-radius: 20px;
+            padding: 10px 10px;
+            transition: all 0.5s;
+        }
+        
+        .button:hover {
+            opacity: 0.5;
+            background-color: rgb(11, 129, 180);
+            color: #333;
+        }
+        
+        .button a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        /* media */
+        
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <h1>Our Team</h1>
+      <nav class="nav-container">
+         <h1 class="logo">Our Team</h1>
+         <ul class="nav-list">
+           <li class="nav-item">Support</li>
+           <li class="nav-item">Contact</li>
+           <li class="nav-item">About</li>
+         </ul>
+      </nav>
     </header>
     <div class="container">
-      <div class="card" id="id">
-        <!-- segev card -->
-        <img class="image" src="" />
-        <h1>Name</h1>
-        <p>description</p>
-        <div class="button"><a href="">Explore Profile</a></div>
-      </div>
-      <div class="card" id="id">
-        <!-- ari card -->
-        <img class="image" src="" />
-        <h1>Name</h1>
-        <p>description</p>
-        <div class="button"><a href="">Explore Profile</a></div>
-      </div>
-      <div class="card" id="id">
-        <!-- shady card -->
-        <img class="image" src="" />
-        <h1>Name</h1>
-        <p>description</p>
-        <div class="button"><a href="">Explore Profile</a></div>
-      </div>
-      <div class="card" id="id">
-        <!-- keter card -->
-        <img class="image" src="" />
-        <h1>Name</h1>
-        <p>description</p>
-        <div class="button"><a href="">Explore Profile</a></div>
-      </div>
-      <div class="card" id="id">
-        <!-- michael card -->
-        <img class="image" src="" />
-        <h1>Name</h1>
-        <p>description</p>
-        <div class="button"><a href="">Explore Profile</a></div>
-        <img class="image" src="michael-page/mypic.jpg" />
-        <h1>Michael Vezdenev</h1>
-        <p>Programmer</p>
-        <div class="button">
-          <a href="michael-page/index.html">Explore Profile</a>
+        <div class="card" id="id">
+            <!-- segev card -->
+            <img class="image" id="segev-image" src="/pages/IMG-20211215-WA0016.jpg">
+            <h1>Segev Klein</h1>
+            <p>Head of Team</p>
+            <div class="button"><a href="pages/segev.html">Explore Profile</a></div>
         </div>
-      </div>
+        <div class="card" id="id">
+            <!-- ari card -->
+            <img class="image" src="./ari-port/ari-pic.jpg">
+            <h1>Ari Wolf</h1>
+            <p>Full stack develrper</p>
+            <div class="button"><a href="./ari-port/Ari-portfolio.html">Explore Profile</a></div>
+        </div>
+        <div class="card" id="id">
+            <!-- shady card -->
+            <img class="image" src="https://scontent.fhfa4-1.fna.fbcdn.net/v/t1.6435-9/65621409_10157496048765555_4928813574496714752_n.jpg?stp=c0.376.1080.1080a_dst-jpg_s526x395&_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=IBy95b1CgY4AX9YpNQE&tn=gmGTvCn67yPoH2lC&_nc_ht=scontent.fhfa4-1.fna&oh=00_AT-0QZfBMtSCbQLRgjvRcHLsr1-ELTfQGBZqNwqi8jubCQ&oe=626F723B">
+            <h1>Shhady Serhan</h1>
+            <p>Web Developer</p>
+            <div class="button"><a href="pages/shhady.html">Explore Profile</a></div>
+        </div>
+        <div class="card" id="id">
+            <!-- keter card -->
+            <img class="image" src="">
+            <h1>Name</h1>
+            <p>description</p>
+            <div class="button"><a href="">Explore Profile</a></div>
+        </div>
+        <div class="card" id="id">
+            <!-- michael card -->
+            <img class="image" src="">
+            <h1>Michael</h1>
+            <p>Programmer</p>
+            <div class="button"><a href="michael-page/index.html">Explore Profile</a></div>
+        </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
