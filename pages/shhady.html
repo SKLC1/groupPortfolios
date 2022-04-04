@@ -42,9 +42,11 @@
             .header {
                 display: grid;
                 grid-template-columns: 1fr 2fr;
-                margin-top: 6rem;
+                margin-top: 3rem;
                 align-items: center;
+                min-width: 500px;
                 gap: 2rem;
+                background-image: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
             }
             .header img{
                 padding: 2rem;
@@ -57,7 +59,7 @@
                 margin-top: 2rem;
                 
             }
-            @media (max-width:768px) {
+            @media (max-width:988px) {
                 .header{
                     grid-template-columns: 1fr;
                     align-items: center;
@@ -106,7 +108,9 @@
             padding: 1rem;
             background: lightgrey;
             opacity: 0.6;
-            border-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-bottom-left-radius: 80px;
+            min-width: 500px;
         }
         .vid{
             background-color: grey;
@@ -160,28 +164,75 @@
 
         .main{
             padding: 1rem;
-            background-color: ghostwhite;
+            /* background-color: ghostwhite; */
+            gap: 15px;
+            margin: auto;
+            width: 100%;
+        }
+
+        @media (max-width:520px) {
+            .main{
+                margin-left: 20px;
+                width: 100%;
+            }
+            
         }
         .projects {
             display: grid;
-             grid-template-columns: repeat(3, 1fr);
-             grid-gap: 15px;
+             grid-template-columns: repeat(1, 1fr);
+             /* grid-gap: 15px; */
              text-align: center;
+             width: 100%;
         }
-        img {
-         width: 100%;
-         height: 80%;
+        .images {
+         width: 8rem;
+         height: 8rem;
          object-fit: cover;
+         border-radius: 50%;
 
         }
         .tesla{
             border-radius:30px;
             border:1px solid black;
-            box-shadow: 1px;
+            box-shadow: 5px;
             text-align: center;
             overflow: hidden;
+            background-color: lightgray;
+            transition: all 1s;
+        }
+        .photos{
+            display: grid;
+             grid-template-columns: repeat(2, 1fr);
+             grid-gap: 15px;
+             text-align: center;
+             width: 100%;
+             
         }
 
+        @media (max-width:768px) {
+            .projects{
+                grid-template-columns: 1fr;
+            }
+            .photos{
+                grid-template-columns: 1fr;
+            }
+            
+        }
+        .main{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+        }
+        .tesla:hover{
+            background-color: white;
+            opacity: 0.8;
+        }
+        .projects {
+            display: grid;
+             grid-template-columns: repeat(1, 1fr);
+             text-align: center;
+             width: 100%;
+        }
 
     </style>
 <body>
@@ -191,13 +242,13 @@
        </div>
        <div>
             <ul>
-                <li> <a href="#" target="_blank">
+                <li> <a href="https://www.facebook.com/shhady.serhan/" target="_blank">
                     <i class="fab fa-facebook-f"></i> 
               </a></li>
-                <li> <a href="#" target="_blank">
+                <li> <a href="https://www.instagram.com/shhadyse/" target="_blank">
                     <i class="fab fa-instagram"></i> 
               </a></li>
-                <li> <a href="#" target="_blank">
+                <li> <a href="www.linkedin.com/in/shhady-serhan-a11403124" target="_blank">
                     <i class="fab fa-linkedin-in"></i> 
               </a></i></li>
             </ul>
@@ -228,7 +279,7 @@
              </div>
              <div class="imgs">
                 <h2>
-                    Photos
+                    Memes
                 </h2>
             </div>
              <div class="vid">
@@ -240,15 +291,165 @@
 
          <div class="main">
             <div class="projects">
+                <div class="card">
+                    <a href="https://genuine-capybara-5d33c3.netlify.app/" target="_blank">
                 <div class="tesla">
-                    <a href="https://genuine-capybara-5d33c3.netlify.app/">
-                        <img alt="Tesla" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop">
-                     </a>
-                     <h2>Tesla Model 3</h2>
+                    <!-- <a href="https://genuine-capybara-5d33c3.netlify.app/"> -->
+                        <img class="images" alt="Tesla" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop">
+                     
+                     <h2>Tesla</h2>
                 </div>
+                    </a>
             </div>
-
+            <div class="card">
+                <a href="https://genuine-capybara-5d33c3.netlify.app/" target="_blank">
+            <div class="tesla">
+                <!-- <a href="https://genuine-capybara-5d33c3.netlify.app/"> -->
+                    <img class="images" alt="Spinners" src="https://ihatetomatoes.net/wp-content/uploads/2014/07/img_css3-spinning-preloader-05.png">
+                    
+                 <h2>Spinners</h2>
+            </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://genuine-capybara-5d33c3.netlify.app/" target="_blank">
+        <div class="tesla">
+            <!-- <a href="https://genuine-capybara-5d33c3.netlify.app/"> -->
+                <img class="images" alt="buttons" src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/02/moises-de-paula-HPZZHJ-LuDI-unsplash.jpg">
+             
+             <h2>Buttons</h2>
+        </div>  
+            </a>
+    </div>
+    <div class="card">
+        <a href="https://genuine-capybara-5d33c3.netlify.app/" target="_blank">
+    <div class="tesla">
+            <img class="images" alt="buttons" src="https://assets.justinmind.com/wp-content/uploads/2020/09/lyft-landing-page-example-user-goal.png">
+         
+         <h2>Landing Page</h2>
+    </div>  
+        </a>
          </div>
+         <div class="card">
+            <a href="https://genuine-capybara-5d33c3.netlify.app/" target="_blank">
+        <div class="tesla">
+                <img class="images" alt="buttons" src="https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1641853527270-1QV7RWMNNZ99J5DFB722/r315_34a_pub.pub16.356.jpg?format=2500w">
+             
+             <h2>Pixar</h2>
+        </div>  
+            </a>
+             </div>
+            </div>
+            <div class="Photos">
+                <div class="card">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsmallplanetapps.medium.com%2Fprogrammer-memes-8f87cadda505&psig=AOvVaw1vaFOY7thCoAVePEjKZ2Ci&ust=1649169148185000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDg_IXQ-vYCFQAAAAAdAAAAABAD" target="_blank">
+                <div class="tesla">
+                    <!-- <a href="https://genuine-capybara-5d33c3.netlify.app/"> -->
+                        <img class="images" alt="Me" src="https://miro.medium.com/max/1400/1*jdAwoALSdrFDeE4v1QRLNg.png">
+                     
+                     <h2>meme</h2>
+                </div>
+                    </a>
+            </div>
+            <div class="card">
+                <a href="#" target="_blank">
+            <div class="tesla">
+                <!-- <a href="https://genuine-capybara-5d33c3.netlify.app/"> -->
+                    <img class="images" alt="me" src="https://miro.medium.com/max/1250/1*RsplgwRl4vGQW25GGhndfg.png">
+                    
+                 <h2>Run</h2>
+            </div>
+                </a>
+        </div>
+        <div class="card">
+            <a href="#" target="_blank">
+        <div class="tesla">
+            <!-- <a href="https://genuine-capybara-5d33c3.netlify.app/"> -->
+                <img class="images" alt="me" src="https://miro.medium.com/max/1400/1*czLgDQX8Vq8y-WyWNVLq7Q.jpeg">
+                
+             <h2>Bug</h2>
+        </div>
+            </a>
+    </div>
+    <div class="card">
+        <a href="#" target="_blank">
+    <div class="tesla">
+        <!-- <a href="https://genuine-capybara-5d33c3.netlify.app/"> -->
+            <img class="images" alt="me" src="https://miro.medium.com/max/792/1*anhgwPSlWe9C2P1aFTL85Q.jpeg">
+            
+         <h2>Variable</h2>
+    </div>
+        </a>
+</div>
+<div class="card">
+    <a href="#" target="_blank">
+<div class="tesla">
+    <!-- <a href="https://genuine-capybara-5d33c3.netlify.app/"> -->
+        <img class="images" alt="me" src="https://miro.medium.com/max/1200/1*IOScg6UwFJGKEhJafKEDfg.jpeg">
+        
+     <h2>almost there</h2>
+</div>
+    </a>
+</div>
+        </div>
+
+        <div class="vids">
+            <div class="card">
+                <a href="https://youtu.be/pQN-pnXPaVg" target="_blank">
+            <div class="tesla">
+                
+                    <img class="images" alt="html" src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw">
+                    
+                 <h2>HTML</h2>
+            </div>
+                </a>
+        </div>
+  
+        <div class="card">
+            <a href="https://youtu.be/1Rs2ND1ryYc" target="_blank">
+        <div class="tesla">
+        
+                <img class="images" alt="html" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png">
+                
+             <h2>CSS</h2>
+        </div>
+            </a>
+    </div>
+    
+    <div class="card">
+        <a href="https://youtu.be/PkZNo7MFNFg" target="_blank">
+    <div class="tesla">
+        
+            <img class="images" alt="html" src="https://i2.wp.com/thebamboocode.com/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500">
+            
+         <h2>Java Script</h2>
+    </div>
+        </a>
+</div>
+  
+<div class="card">
+    <a href="https://youtu.be/w7ejDZ8SWv8" target="_blank">
+<div class="tesla">
+    
+        <img class="images" alt="html" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">
+        
+     <h2>React</h2>
+</div>
+    </a>
+</div>
+
+<div class="card">
+    <a href="https://youtu.be/fBNz5xF-Kx4" target="_blank">
+<div class="tesla">
+
+        <img class="images" alt="html" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAn1BMVEXy8vL///8zMzNtp1339fdmoGBcm1U7hzn39/f6+vosLCxjnVdinlwYGBji4uImJiZVo0TU4NMdHR1xcXHl6uWbm5vPz8++0rzf5t6iwZ+jo6PF1sOAgIBXl0mxyq+7u7thoU5urmNOkE1upGhlZWVLS0vZ2dmGsYJWVlYQEBCSuI6Ojo5DQ0OwsLBGjkF4qG8ugiwAAABLmEAffR2Fs3l1R00PAAAOxklEQVR4nOWd60LjuA6A05KGpARyWgqllBZ2GSiUGWaY2fd/tmM7N19jOZab7Dn6wSXNxV8lWbKtJNHkBJJlaZpGoqRplmWnuHgU9OyZzKWTNCxpMEIQHI8ZqiFBCDMnuFaCUKITOuouvC5xCfsqL6QqEQlx8NAhsQg9jVMVNHPFIcRUXys4jBiE2OprJUVonTdhGPW14q1IT8LQfAiMXoSn4PNm9CE8ER+VQQjD9S866d/n9CU8lYH6M/YjPD0flX7u2IvwtAbaSi819iAcRoGl9FCjO+GAfFEfNboSDqnAUlzV6Eg4lAfy4qhGN8Kh4SoJRji8hdbiYqkOhGOw0FocLBVOODSUJPiEQxMpgkw4HhdsBeiMMMIxAkIRQYTjBAQiQgjH1ImKAkEEEI4XEBQ17IRjBoQgWgnHDQhAtBGOHdCOaCEcP6C1u+kmHGuYEKUbsZPw3wFoQewi/LcAdueoXR8O3W4H6Uc4dKudpA/h0G12FHfCf0Oc4MXY25gIB+9lrlxbYEI0EQZptUt7vz1EjoxuhGGa7SDZ9fLyJnJzFRfC4Z0wu55Pi+m9UtLYJfoMVUs4uBOWhFPC+OhSqKN1RS1huIaDpSScTpcvtw7fN5QwXLvhUhNO55ff4Iw6O9UQjsBGOULKeA0OHRo71RAGbTlUOELCuPyAhg4IYdiWQ0UgJF1OcQM7TrVThXAUNqoQTqdfV7AD7YRhGw4WhfASSKgCSf8PH+tL6U8odzYyYdBmO0h/QoVonIA+hGkX4Ui6mciLUFbaOFXoRRiZCcejwlCE4RrsLF6EkYlwRCr0JMwMhMGa20P8CCM94ZhUGIYwVGN7iSdhpCMclQqDEAZqak/xJUz/5wkjlXAsg4pKvAkzhTBMQ3uLN2EkE46rn8EgzCTCkRkpAmEqEQZppof4E0Yi4diMFIMwEwhDNNJLEAij/y9C3kizK8dlO1HiRexxdHPxfoTZK9/0jCNst6bpPV3S6tvC+O6fp5+9GdPo4/J7efE+hFn08P7GL+PoCLPb78V0unxzWdJqJV4dn87OLnbHVS/G7HFa0LWm16wPYRrdF/Twh3YZpyWsN2Wv3y7Z6ch+rqvohC/enzG5SHb72Jkxu31blhdffkSpM2H2SHVDDy9u6pXjrCEsNxAbeeeWtO4d3THenj2dVYgXu4utG2J2dd1evCjuJ26E2evbZbNr42ZpQ8j+S3/MC/6UxXcXd6QOeHbWEBLGn3dwxjS9KcS1ppc3EbCTkOhmKRxeWnpppjUhccDlVD7p2yuQMY42LV+F6OCOzAFFmSuNMRLSzlE5/P2DmmBNmFEbuVTOWXkEBHB9JgCWhBdJAnJH4v3Kl6uKkTC7fdEdXsx/pMwRS8IPHV+5n73gI148i3wN4sVuZnXH1HxxCKFBN1SWL7e1DiUHlBi/d0eOeHVQ+FrEi92h0x11FuZAqDigIPPL65Lw6qvz1J2FArIDKoQkchwjI+Pk9gXGpyfMfij+K8r7FSN8tF1kfmlyR8UBNYjm6EjDL8RADYQGB+Rl+cgIP+xXKaY/NGqMF/+Y+HhCYqrPmkSu28KshB0OyLX7gxG+QK6j1iYZHFCLqLojCb9AB9QSptENRP3zN0b4DroCdUfBVA0OqCckproRWmi3sC5CTQA1HEUJry7tO5aM76+cBtUI0Y14sctbLab3Xw4GqhBmDzCt0KMIobWjaWR5yxH+ZQNUEP/mCG+cLFQhlJPWjiYTQvjFREKrDiXC3RCEJIWPlCR+OjcdLhL+x1GJ50MQzh8IodyVXn4zdQISoZsSP2GExg4WRLj8LvWw85dJlImb6Ngqu9encRKhkxKTcwghSRE/Cn3rAYS07fUwuhEycOK70nlZPZ5GD++ac8iEdkRehXbCYklG3aZIbiWs2i4FkmUUvV5y+zQZqDBmNhLC7ZSo0EbYzJzoszELYdt2kgxwZkAOu23OVghpC/ku5NMohHA7PbcSLtvhtjLdYCesUy52Cd4MSJubcDj/EMvi0/SbdB6VEKrEnZVQnDIhOavM0E1YHh2vNmUCTMyg2qN4jO7raxX30vghe7ASQpV4biMs5Dmhifz1dhGS9JPpb5/kSTl1ktUXKO7bL6sXIUyJnwBC+eJuhPT72T4ns9ksTzb8BYobT0IQYnJ+CsLFLp8xSTZxe4H5R3TtRwiJGJ+nIUxKwFkuEF5Hb56EdiXuzgckJCHopblIP0KAEocjZLPf3z0Jz3dWxKGstFrBaC/Si/D3+bmV8OykPU2e7Blhk+V4EpKWfwI9MTBhfHdICGPyTCeh05uvZoXQj5AZYAJTYuiITyffk3zPMrf05kdD40X4u7Q/K2FizdoK4ZbY7PWbvENn1jYvJ3TjaF0vBnFrEV6EVS8J62y6M29ubZ0M3tQBVHdeStdhSkZVfAgrFQI7G9v4sFpbT1PtANw2PjTfbOoTLWpAWGdjHQGz3q+sJHAnNK+veBB+NoQgJQJmMUgEM83VA2YxDMudzWqyM+HvFhCkRNhMlGkWDTQTVRQ/VMSmV3YmPOcFEDFOMpuoKZTpPbb4LRDa7fREM8Lzd9kdm/HhUiWUmiESioCAiJF4Eb6DZ4TnQmxNo496mPHGrbuUIs958YTp8c+5mxKfDhzho262skuKKdew9Kb7cL5uLa3mafTFM9KcF09IUqT8l0DY3dk8nQk1C+mVw/JvqRbBvGzlG+3MXcbm2orCUAAlFkoIhIRxfy4wXnQB7uV0wxT3dHzvD0qks60gtrOv0e1yvuwoYpPmHkXE6PjrF0SJT7raIUPuotOHLltRyqhkIWqjiVwWvX5ZKp/aKWiZkI5YfnLuaIgYxnJMoZDO2NC5PLDivnyLO9JCGTLqeLQVCKd1UYdKSN3x71aNegdcmwtqmmJIk8yXXY/hUddhpKO/rgkh5D6Eyh11hLTmsjFVTcR42piraVgju/zJ/swP3fw/d/hHRAntgFHljlpC5o5/DEp8OliL98SFFEEgz6Yx16xUXw+UkLnjl56QuuPzH01n86Qro9Gc+UozHGyHfPbDtYGn/npgVsokze5NhLR89vOXEjH2Gj59cZTqT+Y6LN3hSuBpvp6UEMLLZLuuGMcb5o5chNDQxHdHvVold5zXJbDAhkmBh/t6MloxBD9Tp8Srw5+ms3n6R1OSGEebZnFIaSSfW9jqIVXJ+FVrvvJ3gkhYJXJlhNCVlcbrPC/nM7W22uQWkJpWzeGvlaWLN1PgEtJE7tenLkWjHy1+ssUvOqVpqKtluYUuRYNJeTPDuxhAGSHmjXkkcmhTtHh1ZNO1sz3jTPR1tSS3mINryzWHpzdyAE0ZIe59a7GOjzpguXhJEoSc/amvq0297kgili7BZGUVtM85IRJvifJmdR/T4OrdEVcmpyCk6wnUMNv8W1hhCCsnIKwcMM/XvPnFbM09N7gjojR3I4QSVh5ROaD8Qa79AFcy/q6gENKlqka5utwOSyZhCRt3M+TfqoOii3TvGq5wXaZ5H6GTxZf23rUAjlimaDY/M/opjrT3H6KbaZmiQfrKJtkJETm09wHjyHYHj3dVwrrb4CMa7uVGkHhN2gzPWeL1LGc1IsjC38uNrERKmJgNNKYibIhmIQgDPnGAEa74DQ1RHK8W6/1+v14IGg5PiDy+kAjvjsfjXfnn+pAQyXPy48DFwRCE4nMxcJUoEy52ebKI2JxcUpVIssH+odkjBOFEJEQN+goh+ZcSrsppjJypkf71XO8RgFB+Pg2qmRoI4wOLIcf9ertdb55pqD9WWAEI5WcMoZqpgXBFs4At60rJj+hIQ0rlngEIJzIhphL1hPGW/OKWaahKk2pkgU+oPusLdcpNT7iXouSCzp6GIpyohIh9jYGQbM0PKy7YHzebUDrUPXMPUYkGP1yU2fh+UaY19U8q6ISTQQijpAyDSfJ8OO63d3HAiK8lxOtrTNFi3cT7nAbFfNOMfLEJJ1pCxAUMgw7juyNL2dqsZh/ISg2EaEo0EVLPW+w3h+eGM9kE6WlMzxFGU6KZMCrHGau77eYnM9kq5CMTTkyEWEo0+SE3LCR/rmhSU4HhEmZGQrTFUh1hvM2fZ8LkaHwkQ/tDAMKJmRAJUU+4SGqeerd9GMJJFyFOYmOwUup2/OwvTUyrKW9Mws53IyAp0ZC1beh4aR03+cyGDi7KHgiTUCaS/kdRYsfoaZbkh001QKQdzQE9WtjeUYKiRFNfut01+UwZEPO82guRUAGSN2BEDGNOs82TWTtPw03U4BEq77QK8r4nY8SPV5tZUgmx1nawiEYIeN8TBmJHTkMC/R2VVSTMCqMRanDUTf52ysa6XLGFkLVpdo82WLP6sPeu+SuRrVu0q7tsgsZMWK4iJhiEwHfnISCKq7vxz9xM2K4Ue18V/v5DDDttV3fjiE2TGvYDrBTDBf4OS4S436zuHpiKDF4Wo1ZkOLyHFCdk1MUWLPRp9wCvFMPEgKLfjJPaLMpRLgG803y6Qq6MMpEYtuMMhuM1m7DYaD5Br25zfacz1jiKBnhdtek6R64zcX4vN/aKYrzgjDFelNHkgFgrZOYwfoKJuNoTa607lCAFJh0Y5o8QEfdJUgeFMEVCXRQdnyFOglf9CknkqmI+3EKvDohOQsw1xTo5m7GfyMV6xl7GSoi7bFo+qYrOY3TczdZHOgEthMgFDDRHw6/S6wa0ESIjRpud/W42R7EAWgmRa0919yr4iT7ddiEc3ZugRLECAghHjWgzURjhiBEBgCDC8b3vqhIIIIxwpIggQCDhKBFhLYcSjvCtXuCGQ3ccGaI9SrgTjqpLhbmgK+GInNEB0IlwNJbq1manvUdhqXAX7EM4Akt1sdA+hENbqqMCexEOqkZXBfYjHE6N7grsSziQGns1tSfhEJ1qDwP1Ijy1qfYyUE/CU5pqfz4vwtMx+rTRj/A0jH0dEIcwPKNv+/wJJyH7VR//qwWDMJQiPc2zEhxCwoiuSBw+PMIJriKx8CaohBMsSES8CTbhxNtcU1y8SQBCKn1ViU5HJQghFUdd4uuulmCETECYaRaMjkpYwkqyLFWeE5gSsKBktfwXvf5c+9BDAVkAAAAASUVORK5CYII=">
+        
+     <h2>Node JS</h2>
+</div>
+    </a>
+</div> 
+
+    </div>
 </body>
 </html>
 
