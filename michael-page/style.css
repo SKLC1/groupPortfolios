@@ -181,6 +181,23 @@ a:visited {
   color: #abedd8;
   text-decoration: none;
   font-size: 30px;
+  transition: all 1s ease;
+}
+.nav-page3 a:hover {
+  border-radius: 50%;
+  padding: 40px;
+  background-color: rgba(171, 237, 216, 0.5);
+}
+.nav-page2 a {
+  color: #abedd8;
+  text-decoration: none;
+  font-size: 30px;
+  transition: all 1s ease;
+}
+.nav-page2 a:hover {
+  border-radius: 50%;
+  padding: 40px;
+  background-color: rgba(171, 237, 216, 0.5);
 }
 .nav-page3 a:visited {
   text-decoration: none;
@@ -221,9 +238,3 @@ a:visited {
     height: 30vh;
   }
 }
-
-
-            <img class="image" src="michael-page/mypic.jpg">
-            <h1>Michael</h1>
-            <p>programmer</p>
-            <div class="button"><a href="michael-page/index.html">Explore Profile</a></div>
