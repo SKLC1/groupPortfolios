@@ -29,7 +29,7 @@ box-sizing: border-box;
 /* utility */
 body{
 height: 100vh;
-background: url('/pages/segevphotos/—Pngtree—dark\ green\ cyan\ paper\ cut_1225583.jpg')
+/* background: url('/pages/segevphotos/—Pngtree—dark\ green\ cyan\ paper\ cut_1225583.jpg') */
 no-repeat center center/cover;
 height: 90vh;
 font-family: 'Montserrat', sans-serif;
@@ -105,7 +105,9 @@ background-color: rgba(0,136,169,0.8);
 }
 /* main */
 .main-container{
+background: url('/pages/segevphotos/—Pngtree—dark\ green\ cyan\ paper\ cut_1225583.jpg') no-repeat center center/cover;
 height: 60vh;
+width: 100vw;
 display: flex; 
 text-align: start;
 flex-direction: column;
@@ -130,19 +132,78 @@ justify-content: center;
   body{
     height: 100vh;
   }
-  .main-container{
-    margin: 0px 2rem;
-  }
+
   .main-header{
     font-size: 60px;
   }
-}
-@media (max-height:950px){
-  .main-container{
-    margin: 3rem 2rem;
+  .section-container{
+    flex-direction: column;
   }
 }
 
+.nav-container {
+      
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-bottom: rgba(0, 0, 0, 0.5) solid 1px;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+    }
+
+    .logo-2 {
+      font-weight: 1000;
+      text-align: center;
+      transition: all 1s;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .logo:hover {
+      transform: scale(1.2);
+    }
+
+    .nav-item {
+      margin: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 1s;
+      color: #333;
+    }
+
+    .nav-item:hover {
+      transform: scale(1.2);
+    }
+    /* last section */
+    .section-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 3%;
+    }
+    .image{
+      background: url('/pages/IMG-20211215-WA0016.jpg') no-repeat center center/cover;
+      height: 300px;
+      width:300px;
+      border-radius: 50%;
+      border: #0088a9 solid;
+    }
+    .text-container{
+      margin: 20px;
+    }
+    @media (max-width:700px){
+
+  .section-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
   </style>
 </head>
 <body>
@@ -169,5 +230,22 @@ justify-content: center;
       </p>
     </div>
   </main>
+  <section>
+    <nav class="nav-container">
+      <h1 class="logo-2">About me</h1>
+      <ul class="nav-list">
+        <li class="nav-item">Projects</li>
+        <li class="nav-item">Contact</li>
+        <li class="nav-item">About</li>
+      </ul>
+    </nav>
+  </section>
+  <section>
+    <div class="section-container">
+      <div class="photo"><div class="image"></div></div>
+      <aside class="text-container"> Hi! im a Junior Fullstack Developer,<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, maxime?
+      <br><br> My goal is to work for Tesla as Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Quasi veritatis magni eaque possimus ad veniam.</aside>
+    </div>
+  </section>
 </body>
 </html>
