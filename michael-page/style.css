@@ -100,12 +100,13 @@ a:visited {
   justify-content: space-evenly;
 }
 .nav-page2 a {
+  color: #abedd8;
   text-decoration: none;
   font-size: 30px;
 }
 .nav-page2 a:visited {
   text-decoration: none;
-  color: #48466d;
+  color: #abedd8;
 }
 .page2main {
   width: 100vw;
@@ -148,6 +149,14 @@ a:visited {
   border-radius: 10%;
   opacity: 1;
 }
+@media (max-width: 786px) {
+  .page2 {
+    font-size: 30px;
+  }
+  .page2main {
+    flex-direction: column;
+  }
+}
 #page3 {
   width: 100vw;
   height: 100vh;
@@ -159,6 +168,7 @@ a:visited {
   justify-content: space-between;
   flex-direction: column;
 }
+
 .nav-page3 {
   width: 100vw;
   height: 15vh;
@@ -167,6 +177,16 @@ a:visited {
   justify-content: space-evenly;
   flex-direction: row;
 }
+.nav-page3 a {
+  color: #abedd8;
+  text-decoration: none;
+  font-size: 30px;
+}
+.nav-page3 a:visited {
+  text-decoration: none;
+  color: #abedd8;
+}
+
 .page3main {
   display: flex;
   flex-direction: row;
