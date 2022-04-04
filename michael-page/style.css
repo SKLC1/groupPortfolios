@@ -57,8 +57,6 @@ body {
 a:visited {
   color: #abedd8;
 }
-.page1 .main a:hover {
-}
 /*  */
 .backpage {
   display: flex;
