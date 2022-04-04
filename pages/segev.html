@@ -104,14 +104,45 @@ background-color: rgba(0,136,169,0.8);
 }
 /* main */
 .main-container{
+height: 60vh;
 display: flex; 
+text-align: start;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 }
-/* h1{
-margin-top: 20px;
-color: var(--secondery-color)
-} */
+.main-above-text{
+  color: #fff;
+  
+  top: 0;
+}
+.main-header{
+  color: #fff;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.sub-header-text{
+  color: #fff;
+  font-size: 20px;
+}
+@media (max-width:743px){
+  body{
+    height: 100vh;
+  }
+  .main-container{
+    margin: 0px 2rem;
+  }
+  .main-header{
+    font-size: 60px;
+  }
+}
+@media (max-height:950px){
+  .main-container{
+    margin: 3rem 2rem;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -131,7 +162,11 @@ color: var(--secondery-color)
   </header>
   <main>
     <div class="main-container">
-      <h1>Hi, I'm a programmer!</h1>
+      <div class="main-above-text">Hi, my name is</div>
+      <div class="main-header">Segev Klein,<br> I build Web Stuff. </div>
+      <p class="sub-header-text">I'm a beginner software developer and this is my first portfolio.<br>
+        currently im Learning Javascript in Appleseeds Academy.
+      </p>
     </div>
   </main>
 </body>
