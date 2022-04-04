@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,112 +8,126 @@
   <title>Document</title>
   <style>
     /* reset */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* cards */
-  .container{
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 50px;
-    flex-wrap: wrap;
-  }
-  .card{
-    width: 200px;
-    height: 300px;
-    border: solid #333 1px;
-    border-radius: 20px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .image{
-    background-color: aqua;
-    border:solid #333 1px ;
-    border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
-  }
-  .button{
-    background-color: rgb(0, 102, 255);
-    border-radius: 20px;
-    padding: 10px 10px;
-    transition: all 0.5s;
-  }
-  .button:hover{
-    opacity: 0.5;
-    background-color: grey;
-  }
-  .button a{
-    text-decoration: none;
-    color: #fff;
-  }
-  /* media */
-  @media (max-width:700px) {
-    .container{
-      flex-direction: column;
-      margin: 0px 0px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  }
-/* segev card */
 
-/* ari card */
+    /* cards */
+    .container {
 
-/* shady card */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 50px;
+      flex-wrap: wrap;
+    }
 
-/* keter card */
+    .card {
+      width: 200px;
+      height: 300px;
+      border: solid #333 1px;
+      border-radius: 20px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
 
-/* michael card */
+    .image {
+      background-color: aqua;
+      border: solid #333 1px;
+      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+    }
+
+    .button {
+      background-color: rgb(0, 102, 255);
+      border-radius: 20px;
+      padding: 10px 10px;
+      transition: all 0.5s;
+    }
+
+    .button:hover {
+      opacity: 0.5;
+      background-color: grey;
+    }
+
+    .button a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* media */
+    @media (max-width:700px) {
+      .container {
+        flex-direction: column;
+        margin: 0px 0px;
+      }
+    }
+
+    /* segev card */
+
+    /* ari card */
+
+    /* shady card */
+
+    /* keter card */
+
+    /* michael card */
   </style>
 </head>
+
 <body>
   <header>
     <h1>Our Team</h1>
   </header>
-    <div class="container">
-      <div class="card" id="id">
+  <div class="container">
+    <div class="card" id="id">
       <!-- segev card -->
       <img class="image" src="">
       <h1>Name</h1>
       <p>description</p>
       <div class="button"><a href="">Explore Profile</a></div>
     </div>
-      <div class="card" id="id">
+    <div class="card" id="id">
       <!-- ari card -->
       <img class="image" src="">
       <h1>Name</h1>
       <p>description</p>
       <div class="button"><a href="">Explore Profile</a></div>
     </div>
-      <div class="card" id="id">
+    <div class="card" id="id">
       <!-- shady card -->
       <img class="image" src="">
       <h1>Name</h1>
       <p>description</p>
       <div class="button"><a href="">Explore Profile</a></div>
     </div>
-      <div class="card" id="id">
-      <!-- keter card -->
-      <img class="image" src="">
-      <h1>Name</h1>
-      <p>description</p>
-      <div class="button"><a href="">Explore Profile</a></div>
+    <div class="card" id="id">
+      <div><img class=image src="./my picture.jpg"></div>
+      <h1>Keter</h1>
+      <p>A programmer</p>
+      <div class="button"><a href="/keter's pages/webpage.html">Explore
+          Profile</a></div>
     </div>
-      <div class="card" id="id">
-      <!-- michael card -->
-      <img class="image" src="">
-      <h1>Name</h1>
-      <p>description</p>
-      <div class="button"><a href="">Explore Profile</a></div>
-    </div>
+    <img class="image" src="">
+    <h1>Name</h1>
+    <p>description</p>
+    <div class="button"><a href="">Explore Profile</a></div>
+  </div>
+  <div class="card" id="id">
+    <!-- michael card -->
+    <img class="image" src="">
+    <h1>Name</h1>
+    <p>description</p>
+    <div class="button"><a href="">Explore Profile</a></div>
+  </div>
   </div>
 </body>
+
 </html>
